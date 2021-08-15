@@ -119,7 +119,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        print("Successfully (re)imported " + shortname)
+        print("🇮🇳🇮🇳INDIAN-USERBO🇮🇳🇮🇳 installed " + shortname)
 
 
 def remove_plugin(shortname):
