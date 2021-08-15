@@ -35,7 +35,7 @@ else:
 
 import glob
 # for userbot
-files = sorted(os.listdir("plugins"))
+files = sorted(os.listdir("userbot.plugins"))
 for plugin_name in files:
     try:
         if plugin_name.endswith(".py"):
