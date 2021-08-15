@@ -35,14 +35,14 @@ else:
 
 
 import glob
-# for userbot
-files = sorted(os.listdir("userbot.plugins"))
-for plugin_name in files:
+path = "userbot/plugins/*.py"
+files = glob.glob(path)
+for name in files:
     try:
-        if plugin_name.endswith(".py"):
-            load_plugins(plugin_name[:-3])
-            if not plugin_name.startswith("__") or plugin_name.startswith("_"):
-                LOGS.info(f"ExtremeProUserbot - Official -  Installed - {plugin_name}")
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            load_module(shortname.replace(".py", ""))
     except Exception:
         LOGS.info(f"Indian Userbot - Official - ERROR - {plugin_name}")
         LOGS.info(str(traceback.print_exc()))
