@@ -7,6 +7,7 @@ import os
 
 from userbot import bot
 from userbot.utils import load_module as load_plugins
+from userbot import LOGS
 from var import Var
 
 
