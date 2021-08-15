@@ -3,6 +3,7 @@ from sys import argv
 
 import telethon.utils
 from telethon import TelegramClient
+import os
 
 from userbot import bot
 from userbot.utils import load_module as load_plugins
