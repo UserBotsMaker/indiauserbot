@@ -5,7 +5,7 @@ import telethon.utils
 from telethon import TelegramClient
 
 from userbot import bot
-from userbot.utils import load_module
+from userbot.utils import load_module as load_plugins
 from var import Var
 
 
@@ -34,14 +34,19 @@ else:
 
 
 import glob
+# for userbot
+files = sorted(os.listdir("plugins"))
+for plugin_name in files:
+    try:
+        if plugin_name.endswith(".py"):
+            load_plugins(plugin_name[:-3])
+            if not plugin_name.startswith("__") or plugin_name.startswith("_"):
+                LOGS.info(f"ExtremeProUserbot - Official -  Installed - {plugin_name}")
+    except Exception:
+        LOGS.info(f"Indian Userbot - Official - ERROR - {plugin_name}")
+        LOGS.info(str(traceback.print_exc()))
 
-path = "userbot/plugins/*.py"
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
+
 
 
 print("Yay your userbot is officially working. You should owe @pureindialover")
