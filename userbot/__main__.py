@@ -51,7 +51,7 @@ for name in files:
 
 
 
-print("Yay your userbot is officially working. You should owe @pureindialover")
+print("Yay your userbot is officially working.")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
