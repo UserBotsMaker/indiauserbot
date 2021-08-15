@@ -4,7 +4,7 @@ from sys import argv
 import telethon.utils
 from telethon import TelegramClient
 import os
-
+import traceback
 from userbot import bot
 from userbot.utils import load_module
 from userbot import LOGS
