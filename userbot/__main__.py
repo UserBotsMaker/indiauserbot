@@ -45,7 +45,7 @@ for name in files:
             shortname = path1.stem
             load_module(shortname.replace(".py", ""))
     except Exception:
-        LOGS.info(f"Indian Userbot - Official - ERROR - {plugin_name}")
+        LOGS.info(f"Indian Userbot - Official - ERROR - {shortname}")
         LOGS.info(str(traceback.print_exc()))
 
 
