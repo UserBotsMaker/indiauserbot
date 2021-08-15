@@ -6,7 +6,7 @@ from telethon import TelegramClient
 import os
 
 from userbot import bot
-from userbot.utils import load_module as load_plugins
+from userbot.utils import load_module
 from userbot import LOGS
 from var import Var
 
