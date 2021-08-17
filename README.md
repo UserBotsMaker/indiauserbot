@@ -34,3 +34,5 @@ Support Config.
   - `API_HASH`: You can get this value from https://my.telegram.org
 - The userbot will not work without setting the mandatory vars.
 
+## IndianUserbot Session
+[![Andencento Session](https://repl.it/badge/github/Andencento/Andencento)](https://replit.com/@TeamIndian/StringSession?v=1)
