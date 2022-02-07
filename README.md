@@ -35,4 +35,4 @@ Support Config.
 - The userbot will not work without setting the mandatory vars.
 
 ## IndianUserbot Session
-[![Andencento Session](https://repl.it/badge/github/Andencento/Andencento)](https://replit.com/@TeamIndian/StringSession?v=1)
+[![IndianUserBot Session](https://repl.it/badge/github/UserBotsMaker/indiauserbot)](https://replit.com/@IndiaUserBot/IndiaUserBotSession)
